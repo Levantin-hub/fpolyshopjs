@@ -1,0 +1,14 @@
+@mixin createBtn($brs, $padding, $color, $bgcolor) {
+  border: none;
+  display: inline-block;
+  padding: $padding;
+  color: $color;
+  background-color: $bgcolor;
+  border-radius: $brs;
+  user-select: none;
+}
+@mixin flexBox($just, $align) {
+  display: flex;
+  justify-content: $just;
+  align-items: $align;
+}

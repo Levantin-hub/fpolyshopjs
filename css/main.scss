@@ -1,0 +1,193 @@
+@import "./variables";
+@import "./functions";
+
+*,
+*::after,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+*::selection {
+  background-color: #fae5e5b6;
+}
+a {
+  text-decoration: none;
+  color: $textColor;
+}
+input {
+  font-family: "Nunito Sans", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: $bgcolor;
+  scroll-behavior: smooth;
+}
+.container {
+  width: 100%;
+  max-width: 117rem;
+  margin: 0 auto;
+}
+.btn {
+  @include createBtn(5rem, 1.1rem 2.4rem, $textColor, $mainBgColor);
+  border: 1.4px solid $borderColor;
+  margin-left: 1.5rem;
+  font-weight: 700;
+  user-zoom: none;
+  transition: all 0.25s linear;
+  &:hover {
+    background-color: $textColor;
+    color: $mainBgColor;
+    border-color: $textColor;
+  }
+}
+.main-header {
+  background-color: $mainBgColor;
+}
+.nav-top {
+  @include flexBox(space-between, center);
+  width: 100%;
+  height: 9rem;
+  border-bottom: 1px solid $bgcolor;
+  &-btn-menu {
+    @include flexBox(flex-start, center);
+    width: 6rem;
+    height: 100%;
+    border-right: 1px solid $bgcolor;
+    &-link {
+      font-size: 2rem;
+      color: $textColor;
+    }
+  }
+  &-logo {
+    width: 100%;
+    max-width: 16rem;
+    margin-left: 3rem;
+    user-select: none;
+    &-img {
+      width: 100%;
+      object-fit: contain;
+      display: block;
+    }
+  }
+  @keyframes menuHover {
+    from {
+      opacity: 0;
+      width: 0;
+    }
+    to {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  @keyframes menuHover2 {
+    from {
+      opacity: 0;
+      width: 100%;
+    }
+    to {
+      opacity: 1;
+      width: 0;
+    }
+  }
+  &-list {
+    @include flexBox(space-between, center);
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    &-item {
+      font-size: 1.9rem;
+      font-weight: 600;
+      transition: all 0.25s linear;
+      position: relative;
+      &::after {
+        transition: all 5s linear;
+      }
+      &:hover ::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        border-radius: 2px;
+        background-color: $textColor;
+        animation: menuHover 0.5s forwards;
+      }
+    }
+  }
+  &-cart {
+    width: 100%;
+    max-width: 12rem;
+    padding: 1rem;
+    @include flexBox(space-around, center);
+    &-icon {
+      font-size: 1.6rem;
+    }
+    &-text {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    &-amount {
+      font-size: 1.2rem;
+      font-weight: 800;
+      @include createBtn(50%, 0, $textColor, $bgcolor);
+      @include flexBox(center, center);
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+  }
+}
+.nav-sub {
+  @include flexBox(space-between, center);
+  height: 6rem;
+  &-list {
+    @include flexBox(space-between, center);
+    width: 100%;
+    max-width: 58rem;
+    font-variant: small-caps;
+    &-item a {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: $textFocusColor;
+    }
+    &-item:nth-child(3) a {
+      color: $textColor;
+    }
+  }
+  &-search {
+    @include flexBox(flex-end, center);
+    height: 100%;
+    &-support {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: $textFocusColor;
+    }
+    &-box {
+      height: 100%;
+      border-left: 1px solid $bgcolor;
+      @include flexBox(space-around, center);
+      margin-left: 3rem;
+      padding-left: 2rem;
+      & i {
+        font-size: 1.4rem;
+        color: $textColor;
+      }
+      &-input {
+        border: none;
+        width: 80%;
+        padding: 0.5rem 1rem 0.5rem 0;
+        font-size: 1.5rem;
+        font-weight: 500;
+        position: relative;
+        border-right: 1px solid transparent;
+        &::placeholder {
+          color: $textPlaceholder;
+        }
+        &:focus {
+          border-right: 1px solid $textFocusColor;
+        }
+      }
+    }
+  }
+}

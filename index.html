@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HOME | FPOLYSHOP</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <style>
+      
+      
+      #myBtn {
+        width: 50px;
+        height: 50px;
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 20px;
+
+        opacity: 0.8;
+        transition-duration: 0.5s;
+        cursor: pointer;
+        
+        border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+      }
+      
+      
+      </style>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" class="btn btn-outline-danger" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+      <div class="container border-bottom">
+        <header class="menu-header ">
+          <div class="row border-bottom">
+            <div class="col-md-3">
+              <a href="index.html" class="d-flex justify-content-start pt-2">
+                <img
+                  src="./images/logo-web.png"
+                  style="width: 60px; height: 60px"
+                  alt="polyshop-logo"
+                  class="nav-top-logo-img"
+                />
+                <span class="shop-name">FPOLY SHOP</span>
+              </a>
+            </div>
+            <div class="col-md-5 ">
+              <form class=" d-flex justify-content-center mt-4">
+                <input class="form-control search mr-sm-2" type="search" placeholder="I'm looking for..." aria-label="Search">
+              </form>
+            </div>
+            <div class="col-md-2">
+              <div class="address mt-2">
+                <a href="#" >
+                  <i class="fas fa-map-marker-alt"></i>
+                  Siêu thị gần nhất
+                </a>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="shopping-cart d-flex justify-content-end mt-4">
+                <button type="button" class="btn btn-outline-dark"><i class="fas fa-shopping-cart"></i> Giỏ hàng (0)</button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <nav class="nav-menu">
+          <div class="row " style="height: 50px;">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html"><i class="fas fa-home"></i> HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html"><i class="fas fa-shopping-bag"></i> SHOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-bookmark"></i> COLLECTION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#"><i class="fab fa-blogger"></i> BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#"><i class="fas fa-file-contract"></i> CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#"><i class="fas fa-columns"></i> PAGES</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+      <div class="wapper bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 p-0">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="/images/bg-slide-1.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="/images/bg-slide-2.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="/images/bg-slide-3.jpg" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="/images/bg-slide-4.jpg" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md pr-0">
+                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="/images/bg-small-1.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/images/bg-small-2.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/images/bg-small-3.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md pr-0">
+                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="/images/bg-small-4.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/images/bg-small-5.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/images/bg-small-6.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row m-0 bg-white" style="width: 365px; height: 93px;">
+                  
+                  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" >
+                      <div class="carousel-item active">
+                        <div class=" blog-small d-block w-100" style="width: 100%;">
+                          <img src="/images/avata-blog1.jpg" alt="Card image cap">
+                          <div class=" text-content">
+                            <p >Galaxy A22 lên ngôi mùa sale: Dù không sale vẫn dẫn đầu phân khúc với giá quá ổn áp</p>
+                          <small class="text-muted">27/07/2021 | 08:00 AM</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item" >
+                        <div class=" blog-small d-block w-100" style="width: 100%;">
+                          <img   src="/images/avatar-blog-2.jpg" alt="Card image cap">
+                          <div class=" text-content">
+                            <p >Giật mình với màn trên tay Vsmart Bee 5 sau khi Vsmart tuyên bố dừng sản xuất</p>
+                          <small class="text-muted">27/07/2021 | 09:00 AM</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item" >
+                        <div class=" blog-small d-block w-100" style="width: 100%;">
+                          <img  src="/images/avatar-blog-3.jpg" alt="Card image cap">
+                          <div class="text-content">
+                            <p >TOP 7 điện thoại chụp ảnh đẹp giá 5 triệu đáng mua nhất hiện nay</p>
+                          <small class="text-muted">27/07/2021 | 10:00 AM</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+        <div class="container bg-white">
+          <!-- title Top bán chạy -->
+          <div class="row  border-top-capi mt-2 mb-2">
+            <div class="col-md d-flex justify-content-center ">
+              <div class="boder-capi">
+                <p class="text-capi" >TOP BÁN CHẠY</p>
+              </div>
+            </div>
+          </div>
+          <div class="row border-bottom" id="js-prd-top">
+            
+          </div>
+          
+        </div>
+        <div class="container bg-white">
+          <!-- title blog -->
+          <div class="row  border-top-blog mt-2 mb-2">
+            <div class="col-md d-flex justify-content-center ">
+              <div class="boder-blog">
+                <p class="text-blog" >Blog</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class=" blog-big " style="width: 100%;">
+                <img   src="/images/img-blog-1.jpg" alt="Card image cap">
+                <div class=" text-content">
+                <h3>TOP 7 điện thoại chụp ảnh đẹp nhất hiện nay dành cho tín đồ nhiếp ảnh</h3>
+                <p class="tb">Những chiếc điện thoại chụp ảnh đẹp nhất được trang bị hệ thống camera cải tiến giúp bạn dễ dàng ghi lại mọi khoảnh khắc ấn tượng trong cuộc sống.</p>
+                <small class="text-muted">27/07/2021 | 09:00 AM</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class=" blog-big " style="width: 100%;">
+                <img   src="/images/img-blog-2.jpg" alt="Card image cap">
+                <div class=" text-content">
+                <h3>Hướng dẫn cách đăng ký xét nghiệm Covid-19 online và nhận kết quả tại nhà</h3>
+                <p class="tb">Trước tình hình dịch bệnh Covid-19 ngày càng căng thẳng, 2 thành phố lớn là Hà Nội và Hồ Chí Minh đều đã phải giãn cách xã hội thì việc xét nghiệm Covid-19 là rất cần thiết</p>
+                <small class="text-muted">27/07/2021 | 09:00 AM</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class=" blog-big " style="width: 100%;">
+                <img   src="/images/img-blog-3.jpg" alt="Card image cap">
+                <div class=" text-content">
+                <h3>Cách đăng ký xe online trên điện thoại vừa thuận tiện, vừa nhanh chóng cho bạn nào mới mua xe</h3>
+                <p class="tb">Bắt đầu từ ngày 21/07, cục cảnh sát giao thông đã hỗ trợ người dân đăng ký xe online ngay tại nhà.</p>
+                <small class="text-muted">27/07/2021 | 09:00 AM</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class=" blog-big " style="width: 100%;">
+                <img   src="/images/img-blog-4.jpg" alt="Card image cap">
+                <div class=" text-content">
+                <h3>Nokia C30 ra mắt: Smartphone dưới 3 triệu sở hữu màn hình siêu lớn, pin cực khủng</h3>
+                <p class="tb">Sau khi trình làng Nokia XR20, HMD Global tiếp tục giới thiệu thêm một mẫu điện thoại mới thuộc phân khúc giá rẻ là Nokia C30.</p>
+                <small class="text-muted">27/07/2021 | 09:00 AM</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer bg-dark border-top pt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="email-free">
+                <h2 class="d-flex justify-content-center text-white" >ĐĂNG KÝ NHậN TIN KHUYẾN MÃI TỪ FPOLY SHOP</h2>
+                <small class="d-flex justify-content-center text-white" style="font-size: 12px;">Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</small>
+                <form class=" d-flex justify-content-center">
+                <input class="form-control search mr-sm-2 m-2" type="search" placeholder="Nhập địa chỉ email của bạn..." aria-label="Search">
+                <button style="border-radius: 25px;" type="submit" class="m-2 btn btn-outline-light">ĐĂNG KÝ</button>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/main.js"></script>
+  
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+  </body>
+</html>

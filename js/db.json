@@ -1,0 +1,120 @@
+{
+  "categories": [
+    {
+      "name": "phone",
+      "id": 1
+    },
+    {
+      "name": "laptop",
+      "id": 2
+    },
+    {
+      "name": "smart watch",
+      "id": 3
+    },
+    {
+      "name": "tai nge",
+      "id": 4
+    }
+  ],
+  "brands": [
+    {
+      "name": "apple",
+      "id": 1
+    },
+    {
+      "name": "samsung",
+      "id": 2
+    },
+    {
+      "name": "vivo",
+      "id": 3
+    },
+    {
+      "name": "Nokia",
+      "id": 5
+    },
+    {
+      "name": "oppo",
+      "id": 6
+    },
+    {
+      "name": "realme",
+      "id": 7
+    },
+    {
+      "name": "xiaome",
+      "id": 8
+    },
+    {
+      "name": "dell",
+      "id": 9
+    },
+    {
+      "name": "asus",
+      "id": 10
+    }
+  ],
+  "products": [
+    {
+      "name": "iphone 12 64 GB",
+      "category_id": "1",
+      "brand_id": "1",
+      "price": "20000000",
+      "discount": "0",
+      "desc": "<p>iphone 12 64 gb</p>\n",
+      "image": "iphone-12-64gb.jpeg",
+      "id": 1
+    },
+    {
+      "name": "samsung galaxy a22",
+      "category_id": "1",
+      "brand_id": "2",
+      "price": "5990000",
+      "discount": "0",
+      "desc": "<p>sam sung</p>\n",
+      "image": "samsung-galaxy-a22.jpeg",
+      "id": 2
+    },
+    {
+      "name": "iphone 12 128GB",
+      "category_id": "1",
+      "brand_id": "1",
+      "price": "20000000",
+      "discount": "0",
+      "desc": "<p>iphone 12 128gb</p>\n",
+      "image": "iphone12-128gb.jpeg",
+      "id": 3
+    },
+    {
+      "name": "Sam sung galaxy Utra21",
+      "category_id": "1",
+      "brand_id": "2",
+      "price": "20000000",
+      "discount": "0",
+      "desc": "<p>sam sung</p>\n",
+      "image": "samsung-galaxy-s21-utral5g.jpeg",
+      "id": 4
+    },
+    {
+      "name": "iphone 12 pro max 128GB",
+      "category_id": "1",
+      "brand_id": "1",
+      "price": "29990000",
+      "discount": "0",
+      "desc": "<p>I am iphone 12 pro max 128gb&nbsp;</p>\n",
+      "image": "iphone-pro-max-128gb.jpeg",
+      "id": 5
+    },
+    {
+      "name": "sam sung galaxy S21",
+      "category_id": "1",
+      "brand_id": "2",
+      "price": "29990000",
+      "discount": "0",
+      "desc": "<p>sam sung</p>\n",
+      "image": "samsung-galaxy-s21.jpeg",
+      "id": 6
+    }
+  ]
+}
